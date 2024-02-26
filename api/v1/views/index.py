@@ -6,9 +6,9 @@ from models import storage
 
 
 @app_views.route('/status', methods=['GET'])
-def status():
+def get_status():
     """"Return JSON status: OK"""
-    return jsonify({"status": OK})
+    return jsonify({"status": "OK"})
 
 app_views.route('/api/v1/stats', methods=['GET'])
 def get_stats():
