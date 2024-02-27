@@ -1,10 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bin/python3:
 """"New view for Review object that handles all default RESTFul API"""
 
 from flask import Flask, jsonify, request, abort
 from models import storage
 from models.review import Review
-from api.v1.views import app_views
+from api.v1.views.places import app_views
 
 
 @app_views.route('/places/<place_id>/reviews', methods=['GET'], strict_slashes=False)

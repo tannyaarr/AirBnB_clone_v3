@@ -12,8 +12,6 @@ def get_status():
 
 
 app_views.route('/api/v1/stats', methods=['GET'])
-
-
 def get_stats():
     """Retrieve the number of each object type"""
     stat = {
